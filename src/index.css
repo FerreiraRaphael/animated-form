@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* hsl(0, 0%, 100%) - White */
+    --foreground: 20 14.3% 4.1%; /* hsl(20, 14.3%, 4.1%) - Nearly Black */
+    --card: 0 0% 100%; /* hsl(0, 0%, 100%) - White */
+    --card-foreground: 20 14.3% 4.1%; /* hsl(20, 14.3%, 4.1%) - Nearly Black */
+    --popover: 0 0% 100%; /* hsl(0, 0%, 100%) - White */
+    --popover-foreground: 20 14.3% 4.1%; /* hsl(20, 14.3%, 4.1%) - Nearly Black */
+    --primary: 201 100% 29%; /* hsl(201, 100%, 29%) - Deep Blue */
+    --primary-foreground: 60 9.1% 97.8%; /* hsl(60, 9.1%, 97.8%) - Off White */
+    --secondary: 60 4.8% 95.9%; /* hsl(60, 4.8%, 95.9%) - Very Light Gray */
+    --secondary-foreground: 24 9.8% 10%; /* hsl(24, 9.8%, 10%) - Dark Gray */
+    --muted: 0, 0%, 97%; /* hsla(0, 0%, 97%, 1) - Very Light Gray */
+    --muted-foreground: 25 5.3% 44.7%; /* hsl(25, 5.3%, 44.7%) - Medium Gray */
+    --accent: 0, 0%, 97%, 1; /* hsl(60, 4.8%, 95.9%) - Very Light Gray */
+    --accent-foreground: 24 9.8% 10%; /* hsl(24, 9.8%, 10%) - Dark Gray */
+    --destructive: 0 84.2% 60.2%; /* hsl(0, 84.2%, 60.2%) - Bright Red */
+    --destructive-foreground: 60 9.1% 97.8%; /* hsl(60, 9.1%, 97.8%) - Off White */
+    --border: 20 5.9% 90%; /* hsl(20, 5.9%, 90%) - Light Gray */
+    --input: 20 5.9% 90%; /* hsl(20, 5.9%, 90%) - Light Gray */
+    --ring: 20 14.3% 4.1%; /* hsl(20, 14.3%, 4.1%) - Nearly Black */
+    --chart-1: 12 76% 61%; /* hsl(12, 76%, 61%) - Coral */
+    --chart-2: 173 58% 39%; /* hsl(173, 58%, 39%) - Teal */
+    --chart-3: 197 37% 24%; /* hsl(197, 37%, 24%) - Dark Blue */
+    --chart-4: 43 74% 66%; /* hsl(43, 74%, 66%) - Gold */
+    --chart-5: 27 87% 67%; /* hsl(27, 87%, 67%) - Orange */
+    --radius: 0.5rem
+  }
+  .dark {
+    --background: 20 14.3% 4.1%; /* hsl(20, 14.3%, 4.1%) - Nearly Black */
+    --foreground: 60 9.1% 97.8%; /* hsl(60, 9.1%, 97.8%) - Off White */
+    --card: 20 14.3% 4.1%; /* hsl(20, 14.3%, 4.1%) - Nearly Black */
+    --card-foreground: 60 9.1% 97.8%; /* hsl(60, 9.1%, 97.8%) - Off White */
+    --popover: 20 14.3% 4.1%; /* hsl(20, 14.3%, 4.1%) - Nearly Black */
+    --popover-foreground: 60 9.1% 97.8%; /* hsl(60, 9.1%, 97.8%) - Off White */
+    --primary: 201 100% 29%; /* hsl(201, 100%, 29%) - Deep Blue */
+    --primary-foreground: 60 9.1% 97.8%; /* hsl(60, 9.1%, 97.8%) - Off White */
+    --secondary: 12 6.5% 15.1%; /* hsl(12, 6.5%, 15.1%) - Very Dark Gray */
+    --secondary-foreground: 60 9.1% 97.8%; /* hsl(60, 9.1%, 97.8%) - Off White */
+    --muted: 12 6.5% 15.1%; /* hsl(12, 6.5%, 15.1%) - Very Dark Gray */
+    --muted-foreground: 24 5.4% 63.9%; /* hsl(24, 5.4%, 63.9%) - Medium Gray */
+    --accent: 12 6.5% 15.1%; /* hsl(12, 6.5%, 15.1%) - Very Dark Gray */
+    --accent-foreground: 60 9.1% 97.8%; /* hsl(60, 9.1%, 97.8%) - Off White */
+    --destructive: 0 62.8% 30.6%; /* hsl(0, 62.8%, 30.6%) - Dark Red */
+    --destructive-foreground: 60 9.1% 97.8%; /* hsl(60, 9.1%, 97.8%) - Off White */
+    --border: 12 6.5% 15.1%; /* hsl(12, 6.5%, 15.1%) - Very Dark Gray */
+    --input: 12 6.5% 15.1%; /* hsl(12, 6.5%, 15.1%) - Very Dark Gray */
+    --ring: 24 5.7% 82.9%; /* hsl(24, 5.7%, 82.9%) - Light Gray */
+    --chart-1: 220 70% 50%; /* hsl(220, 70%, 50%) - Bright Blue */
+    --chart-2: 160 60% 45%; /* hsl(160, 60%, 45%) - Green */
+    --chart-3: 30 80% 55%; /* hsl(30, 80%, 55%) - Orange */
+    --chart-4: 280 65% 60%; /* hsl(280, 65%, 60%) - Purple */
+    --chart-5: 340 75% 55% /* hsl(340, 75%, 55%) - Pink */
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
