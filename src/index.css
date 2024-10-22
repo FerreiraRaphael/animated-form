@@ -30,13 +30,13 @@
     --radius: 0.5rem
   }
   .dark {
-    --background: 20 14.3% 4.1%; /* hsl(20, 14.3%, 4.1%) - Nearly Black */
+    --background: 216 14% 7%; /* hsl(20, 14.3%, 4.1%) - Nearly Black hsl(216, 14%, 7%)    */
     --foreground: 60 9.1% 97.8%; /* hsl(60, 9.1%, 97.8%) - Off White */
-    --card: 20 14.3% 4.1%; /* hsl(20, 14.3%, 4.1%) - Nearly Black */
+    --card: 216 14% 7%; /* hsl(20, 14.3%, 4.1%) - Nearly Black */
     --card-foreground: 60 9.1% 97.8%; /* hsl(60, 9.1%, 97.8%) - Off White */
-    --popover: 20 14.3% 4.1%; /* hsl(20, 14.3%, 4.1%) - Nearly Black */
+    --popover: 216 14% 7%; /* hsl(20, 14.3%, 4.1%) - Nearly Black */
     --popover-foreground: 60 9.1% 97.8%; /* hsl(60, 9.1%, 97.8%) - Off White */
-    --primary: 201 100% 29%; /* hsl(201, 100%, 29%) - Deep Blue */
+    --primary: 196 80% 59%; /* hsl(196, 80%, 59%) blue-100 */
     --primary-foreground: 60 9.1% 97.8%; /* hsl(60, 9.1%, 97.8%) - Off White */
     --secondary: 12 6.5% 15.1%; /* hsl(12, 6.5%, 15.1%) - Very Dark Gray */
     --secondary-foreground: 60 9.1% 97.8%; /* hsl(60, 9.1%, 97.8%) - Off White */
